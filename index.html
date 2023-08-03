@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel Blog</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="icon" href="images/Logo.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <script src="js/script.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="navbar">
+          <div class="logo">
+            <a href="">
+              <img src="images/Logo.png" height="63" width="63" alt="Logo" />
+            </a>
+          </div>
+          <div class="hamburger-menu">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+          </div>
+          <ul class="nav-links">
+            <li><a href="#home-section">Home</a></li>
+            <li><a href="#blog-section">Blog</a></li>
+            <li><a href="#contact-section">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container">
+        <section id="home-section" class="section">
+          <div class="blurry-background"></div>
+          <div class="section-content">
+            <h2>Travel Blog</h2>
+            <p>
+              Explore the world through captivating stories, destination guides,
+              and cultural insights. Join our community of adventurers, as we
+              wander, discover, and share the wonders of our planet. Let
+              Wanderlust Chronicles inspire your next unforgettable escapade.
+              Happy travels!
+            </p>
+          </div>
+        </section>
+
+        <section id="blog-section" class="section">
+          <div class="section-content">
+            <h2>Blog section</h2>
+            <div class="blog-grid">
+              <!-- Add your blog post content here -->
+              <div class="blog-post">
+                <h3>Alberta</h3>
+                <img src="images/Alberta.jpg" alt="Blog Post 1" />
+                <p>
+                  Alberta, a province in western Canada, is a treasure trove of
+                  natural wonders and outdoor adventures. With its stunning
+                  Rocky Mountains, serene glacial lakes, and vast prairies,
+                  Alberta offers a picturesque escape for travelers seeking to
+                  connect with nature.
+                </p>
+                <a href="blog-post1.html">Read More</a>
+              </div>
+              <div class="blog-post">
+                <h3>San Diego</h3>
+                <img src="images/San-Diego.jpg" alt="Blog Post 2" />
+                <p>
+                  Welcome to the sun-kissed paradise of San Diego, California,
+                  where golden beaches, vibrant neighborhoods, and a laid-back
+                  vibe beckon travelers from all corners of the globe. Known for
+                  its pleasant climate and diverse attractions, this coastal gem
+                  offers a plethora of experiences that cater to all kinds of
+                  wanderlust.
+                </p>
+                <a href="blog-post2.html">Read More</a>
+              </div>
+              <div class="blog-post">
+                <h3>Istanbul</h3>
+                <img src="images/istanbul.jpg" alt="Blog Post 3" />
+                <p>
+                  Istanbul, the captivating bridge between Europe and Asia, is a
+                  city steeped in history and brimming with cultural delights.
+                  As the former capital of empires, its streets are adorned with
+                  stunning architectural marvels such as the iconic Hagia
+                  Sophia, the Blue Mosque, and the Topkapi Palace.
+                </p>
+                <a href="blog-post3.html">Read More</a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="contact-section" class="section">
+          <div class="section-content">
+            <h2>Contact</h2>
+            <div class="contact-form">
+              <form action="#" method="POST">
+                <label for="name">Name:</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  required
+                  placeholder="Name"
+                />
+                <label for="email">Email:</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  required
+                  placeholder="Email"
+                />
+                <label for="message">Message:</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="4"
+                  required
+                  placeholder="Message"
+                ></textarea>
+                <button type="submit">Submit</button>
+              </form>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="social-icons">
+        <a href="#" class="social-icon"
+          ><i class="fab fa-facebook-f"><span>Facebook</span></i></a
+        >
+        <a href="#" class="social-icon"
+          ><i class="fab fa-twitter"><span>Twitter(X</span>)</i></a
+        >
+        <a href="#" class="social-icon"
+          ><i class="fab fa-instagram"><span>Instagram</span></i></a
+        >
+      </div>
+      <p>&copy; 2023 Travel Blog Post Website. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

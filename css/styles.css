@@ -1,0 +1,415 @@
+/* Reset some default styles */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Navbar styles */
+header {
+  background-color: #001b2e;
+  position: sticky;
+    top: 0;
+    color: #fff;
+    z-index: 100;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.logo {
+  color: #fff;
+  text-decoration: none;
+  font-size: 24px;
+    box-shadow: 0 2px 5px rgba(68, 166, 227, 0.5);
+  }
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-left: 20px;
+}
+
+.nav-links li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #aaa;
+}
+
+.hamburger-menu {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 5px 0;
+  transition: 0.4s;
+}
+
+  
+/* main styles */
+
+main {
+  background: #f9f9f9;
+  filter: opacity(0.9);
+}
+
+
+
+main .container {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+/* Home section styles */
+
+#home-section {
+  position: relative;
+  height: 72vh;
+  width: 100%;
+}
+
+.blurry-background {
+  padding: 60px 20px;
+  text-align: center;
+  height: 72vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("../images/cover.jpg");
+  background-color: #fff;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  filter: grayscale(60%) opacity(0.95) brightness(0.5);
+}
+
+#home-section .section-content {
+  position: relative;
+  z-index: 1;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+#home-section h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+#home-section p {
+  font-size: 18px;
+  font-weight: bold;
+  font-size: large;
+  color: white;
+  /* filter: brightness(1.5); */
+  text-align: justify;
+}
+
+/* Blog section styles */
+#blog-section {
+  background-color: #f5f5f5;
+  padding: 123px 20px;
+  padding-bottom: 60px;
+  background: none;
+  
+}
+
+#blog-section h2 {
+  text-align: center;
+  margin: 10px;
+}
+
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.blog-post {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+.blog-post:hover {
+  transform: scale(1.03);
+}
+ .blog-post h3{
+  text-align: center;
+}
+.blog-post img {
+  width: 100%;
+  height: 200px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.blog-post p {
+  color: #777;
+  font-size: 16px;
+  text-align: justify;
+}
+
+.blog-post a {
+  display: inline-block;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.blog-post a:hover {
+  background-color: #555;
+}
+
+ /* blog post home section styles */
+
+#blog-section-home {
+  background-color:#001b2e;
+  padding: 5px 5px;
+}
+
+#blog-section-home h2 {
+  text-align: center;
+  margin: 10px;
+}
+
+.blog-grid-home {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.blog-post-home {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+.blog-post-home img {
+  width: 100%;
+  height: 350px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.blog-post-home h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.blog-post-home p {
+  color: #777;
+  font-size: 16px;
+  text-align: justify;
+}
+
+.blog-post-home a {
+  display: inline-block;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.blog-post-home a:hover {
+  background-color: #555;
+}
+
+/* Contact section styles */
+#contact-section {
+  background-color: #f9f9f9;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+#contact-section h2 {
+  color: #333;
+  font-size: 32px;
+  
+  margin-bottom: 20px;
+}
+
+.contact-form {
+  text-align: left;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+label {
+  display: block;
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+.contact-form label {
+  font-size: 16px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  font-size: 16px;
+}
+
+.contact-form textarea {
+  height: 120px;
+}
+
+.contact-form button {
+  font-size: 18px;
+}
+
+ 
+/* Footer styles */
+footer {
+    background-color: #001b2e;
+      /* background-color: #0077b5; */
+      color: #fff;
+      text-align: center;
+      padding: 10px;
+}
+
+.social-icon {
+  color: #fff;
+    /* font-size: 20px; */
+    margin: 7px;
+    text-decoration: none;
+}
+
+.social-icon img {
+  width: 30px;
+  height: 30px;
+}
+
+.social-icon:hover {
+ background: #555
+}
+
+footer p{
+  margin-top: 20px;
+}
+
+footer span{
+  padding-left: 10px;
+}
+
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-links li {
+    margin: 10px 0;
+  }
+
+  .hamburger-menu {
+    display: block;
+  }
+
+  .change .bar:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+
+  .change .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .change .bar:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+
+  .show {
+    display: flex;
+  }
+
+  main {
+    padding: 10px;
+  }
+
+  .section-content {
+    max-width: 100%;
+  }
+
+  .blog-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  input,
+  textarea {
+    width: 100%;
+  }
+}
